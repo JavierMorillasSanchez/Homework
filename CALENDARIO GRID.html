@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CALENDARIO GRID</title>
+</head>
+<body>
+    <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+
+        }
+
+    .grid-item{
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+        font-size: 2rem;
+        background-color: rgb(109, 109, 233);
+        margin: (5px);
+        }
+    .p{
+        align-items: center;
+    }
+    </style>
+    <p style="text-align: center;"><h1>CALENDARIO ENERO 2021</h1></p>
+    <br>
+    <div id="CALENDARIO" name="gridcalendario" class="grid-container" style="-ms-grid-column-align: center;">
+        <div id="Lunes." class="grid-item" style="background-color: rgb(204, 90, 90);">L</div>
+        <div id="Martes." class="grid-item" style="background-color: rgb(204, 90, 90);">M</div>
+        <div id="Miercoles." class="grid-item" style="background-color: rgb(204, 90, 90);">X</div>
+        <div id="Jueves." class="grid-item" style="background-color: rgb(204, 90, 90);">J</div>
+        <div id="Viernes." class="grid-item" style="background-color: rgb(204, 90, 90);">V</div>
+        <div id="Sabado." class="grid-item" style="background-color: rgb(130, 211, 119);">S</div>
+        <div id="Domingo." class="grid-item" style="background-color: rgb(130, 211, 119);">D</div>
+        <div id="una celda vacia." class="grid-item"></div>
+        <div id="una celda vacia." class="grid-item"></div>
+        <div id="una celda vacia." class="grid-item"></div>
+        <div id="una celda vacia." class="grid-item"></div>
+        <div id="el día 1." class="grid-item">1</div>
+        <div id="el día 2." class="grid-item">2</div>
+        <div id="el día 3." class="grid-item">3</div>
+        <div id="el día 4." class="grid-item">4</div>
+        <div id="el día 5." class="grid-item">5</div>
+        <div id="el día 6." class="grid-item">6</div>
+        <div id="el día 7." class="grid-item">7</div>
+        <div id="el día 8." class="grid-item">8</div>
+        <div id="el día 9." class="grid-item">9</div>
+        <div id="el día 10." class="grid-item">10</div>
+        <div id="el día 11." class="grid-item">11</div>
+        <div id="el día 12." class="grid-item">12</div>
+        <div id="el día 13." class="grid-item">13</div>
+        <div id="el día 14." class="grid-item">14</div>
+        <div id="el día 15." class="grid-item">15</div>
+        <div id="el día 16." class="grid-item">16</div>
+        <div id="el día 17." class="grid-item">17</div>
+        <div id="el día 18." class="grid-item">18</div>
+        <div id="el día 19." class="grid-item">19</div>
+        <div id="el día 20." class="grid-item">20</div>
+        <div id="el día 21." class="grid-item">21</div>
+        <div id="el día 22." class="grid-item">22</div>
+        <div id="el día 23." class="grid-item">23</div>
+        <div id="el día 24." class="grid-item">24</div>
+        <div id="el día 25." class="grid-item">25</div>
+        <div id="el día 26." class="grid-item">26</div>
+        <div id="el día 27." class="grid-item">27</div>
+        <div id="el día 28." class="grid-item">28</div>
+        <div id="el día 29." class="grid-item">29</div>
+        <div id="el día 30." class="grid-item">30</div>
+        <div id="el día 31." class="grid-item">31</div>
+       
+    </div>
+    <script>  
+        var element=document.getElementsByClassName("grid-item")
+        for(i of element){
+            i.addEventListener("click",()=>{
+                alert("Has hecho click.")
+            })
+        }
+    </script>
+</body>
+</html>
