@@ -8,10 +8,16 @@ El algoritmo para este ejercicio sería:
 
 El codigo seria: 
 
-let geek="geeksforgeeks"
-let invGeek=geek.split("").reverse().join("")
+let frase="geeksforgeeks"
 
-if(geek === invGeek){console.log("Es un palindromo")} else {"No es un palindromo"}
+if(typeof frase!= "string"){
+    console.log("Por favor, introduce una frase.")
+} else {
+    let fraseLow=frase.toLowerCase().replace( /[^-A-Za-z0-9]+/g, "" )
+    let fraseInv=fraseLow.split("").reverse().join("")
+
+    if(fraseLow === fraseInv){console.log("Es un palindromo")} else {"No es un palindromo"}
+}
 
 --2. Diferencias entre flexbox y grid.--
 
