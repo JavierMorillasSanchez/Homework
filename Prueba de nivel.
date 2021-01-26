@@ -16,7 +16,7 @@ if(typeof frase!= "string"){
     let fraseLow=frase.toLowerCase().replace( /[^-A-Za-z0-9]+/g, "" )
     let fraseInv=fraseLow.split("").reverse().join("")
 
-    if(fraseLow === fraseInv){console.log("Es un palindromo")} else {"No es un palindromo"}
+    if(fraseLow === fraseInv){console.log("Es un palindromo")} else {console.log("No es un palindromo")}
 }
 
 --2. Diferencias entre flexbox y grid.--
